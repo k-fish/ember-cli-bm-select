@@ -23,12 +23,3 @@ bm-options {
 bm-selected, bm-option {
     padding: 5px; /*Needs to be removed from default styles*/
 }
-
-bm-selected:after {
-    content: "";
-    border-top: 12px solid black;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    float: right;
-    margin-top: 3px;
-}
