@@ -22,14 +22,6 @@ export default Em.Component.extend({
    * @type Boolean
    */
   isOpen: false,
-    
-  /**
-   * Open when focused. Useful to indicate focus when not using styling
-   * 
-   * @property openOnFocus
-   * @type Boolean
-   */
-  openOnFocus: false,
 
   /**
    * See http://www.w3.org/TR/wai-aria/roles#listbox
@@ -124,17 +116,6 @@ export default Em.Component.extend({
     }
   }.on('click'),
 
-  /**
-   * Observes focusIn so select can be opened if option set
-   * 
-   * @method focusInObserver
-   */
-  focusObserver: function() {
-    if(!this.get('isOpen') && this.get('openOnFocus')) {
-      this.openOptions();
-    }  
-  }.on('focusIn')
-  
   /**
    * Opens the dropdown.
    *
