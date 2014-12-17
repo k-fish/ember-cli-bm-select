@@ -133,7 +133,7 @@ export default Em.Component.extend({
     if(!this.get('isOpen') && this.get('openOnFocus')) {
       this.openOptions();
     }  
-  }.on('focusIn')
+  }.on('focusIn'),
   
   /**
    * Opens the dropdown.
